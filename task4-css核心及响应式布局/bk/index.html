@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 1.bootstrap理默认的table类带有下边框，怎么去掉下边框 -->
+<head>
+	<meta charset="UTF-8">
+	<title>后台登陆界面</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bk.css">
+	<!-- 移动端适配需要加上的一句话 -->
+	<meta charset="utf-8" name="viewport" content="device-width,initial-scale=1">
+     <!-- 用栅格系统做做看 -->
+	</style>
+</head>
+<body>
+ <!-- pc页面 -->
+    <div class="pc">
+        <!-- 设置一个居中的盒子 -->
+        <div class="center">
+            <!--  -->
+                 <form class="form-horizontal">
+                 <div class="form">
+                       <h1>后台登陆</h1>
+                       <div class="form-group bl1">
+                           <label for="username" class=" left ">登录名:</label>
+                
+                    
+                         <input type="text" name="" class="left user" id="username" placeholder="username">
+                    
+                    
+                 </div>
+                 <div class="form-group bl2">
+                     <label for="passw" class="ps left">密码:</label>
+                     <input type="password" name="" id="passw" class="psw" placeholder="password">
+                     
+                <div class="checkbox">
+                     <label >
+                         <input type="checkbox" name="">记住我
+                     </label>
+                     <input type="submit" name="" class="btn-primary btn login" value="登陆">
+                </div>
+            
+                     
+                 </div>
+                 </div>
+                 </form>
+        </div>
+    </div>
+    <div class="mobile">
+    	<div class="center1">
+        <!--水平布局的表单 -->
+            <form class="form-horizontal">
+                <div class="form">
+                    <h3>后台登陆</h3>
+                    <!-- formgroup获取最佳间距 -->
+                    <div class="form-group group1">
+                        <input type="text" name="" class="user1" placeholder="UserName">
+                    </div>
+                    <div class="form-group group2">
+                        <input type="password" name="" class="psw1" placeholder="PassWord">
+                    </div>
+                    <div class="form-group group3">
+                    <!-- 这样才好设置间距 -->
+                        <label >
+                         <input type="checkbox" name="">记住我
+                        </label>
+                        <input type="submit" class="btn btn-primary login1" name="" value="登陆">
+                    </div>
+                </div>
+            </form>   
+        </div>
+    </div>
+</body>
+</html>

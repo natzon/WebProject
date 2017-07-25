@@ -1,0 +1,360 @@
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+
+}
+
+input {
+    outline: none;
+}
+
+.wrapper {
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+
+
+}
+
+header {
+    overflow: hidden;
+    display: block;
+}
+
+header nav {
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    /*iehack*/
+    right: 0;
+   
+    top: 0;
+    margin: 19px 0 5px;
+    padding: 0 141px 0 0;
+}
+
+header nav a {
+    float: left;
+    margin-left: 20px;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*设置*/
+
+.setting-menu {
+    position: absolute;
+    width: 46px;
+    height: 24px;
+    right: 75px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    width: 60px;
+    top: 27px;
+    left: -15px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+.setting-menu a {
+    margin: 0px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.setting-menu .baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.setting-menu .baidu-setting a:hover {
+    color: #ffffff;
+    background-color: #3385ff;
+}
+
+
+/*三角形*/
+
+.setting-menu .icon-triangle {
+    position: absolute;
+    top: -12px;
+    left: 25px;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-triangle:after {
+    content: '.';
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+
+/*更多产品*/
+
+header nav .more {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.setting-more:hover .more-product{
+    display: block;
+}
+
+.more-product {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    min-height: 600px;
+    width: 75px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    /*优先级*/
+    z-index: 999;
+}
+
+.more-product ul {
+    padding: 10px 5px 0 5px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.more-product span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: url(../img/moreproduct.png) no-repeat;
+}
+.more-product .more-sub-btn{
+    height: 30px;
+}
+.more-product .more-sub-btn a:hover{
+    text-decoration: none;
+}
+.more-product .more-sub-one {
+    background-position: -73px;
+}
+
+.more-product .more-sub-two {
+    background-position: -112px;
+}
+
+.more-product .more-sub-three {
+    background-position: -36px;
+}
+
+.more-product .more-sub-four {
+    background-position: -146px;
+}
+
+.more-product .more-sub-five {
+    background-position: -183px;
+}
+.more-product .more-all{
+    border: none;
+}
+.more-product .more-all a{
+    text-decoration: underline;
+}
+
+.more-product li {
+    position: relative;
+    height: 65px;
+    /*padding-right: 14px;
+    padding-left: 15px;*/
+    border-bottom: 1px solid #ddd;
+}
+
+.more-product a {
+    color: #333;
+    text-decoration: none;
+}
+
+.more-product a:hover{
+    text-decoration: underline;
+
+}
+
+
+/*主体部分*/
+
+.content {
+    text-align: center;
+    position: relative;
+    top: 38.2%;
+}
+
+.content .search-form {
+    position: relative;
+    height: 191px;
+    width: 100%;
+    top: -191px;
+}
+
+.content .formset {
+    position: relative;
+    width: 650px;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+.content .search-input {
+    width: 540px;
+    height: 30px;
+    border: 1px solid #d0cccc;
+    padding: 2px 0px 2px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #3385ff;
+    outline-offset: -10px;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    margin-left: -5px;
+    /*变成小手*/
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317ef3;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*相机图标设置*/
+
+.content .icon-cam {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 112px;
+    background: url(../img/camera.png) no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-cam:hover {
+    background-position: 0 -20px;
+}
+
+
+/*底部信息*/
+
+footer {
+    padding-top: 50px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    color: #999;
+    position: relative;
+    line-height: 10px;
+}
+
+footer p a {
+    color: #999;
+}
+
+footer .icon-copyright {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/copyright.png);
+    background-position: -600px 425px;
+}
+
+footer .icon-copyright2 {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/copyright.png);
+    background-position: -623px 425px;
+}

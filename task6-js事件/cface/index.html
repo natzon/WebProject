@@ -1,0 +1,756 @@
+<!-- hao123页面及换肤功能 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hao123</title>
+    <link rel="stylesheet" type="text/css"  id="style">
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" type="image/icon" href="./img/favicon.ico">
+</head>
+
+<body>
+
+    <!-- headbu部分 -->
+    <div class="head">
+        <div class="headcon">
+            <div class="hao123logo">
+                <a href="http://www.hao123.com/redian/sheshouyef.htm" target="_blank">
+                    <img src="./img/hao123logo.png" width="168px" height="60px">
+                </a>
+            </div>
+            <!-- 地点天气信息 -->
+            <div class="item-all">
+                <div class="weather">
+                    <a href="#">
+                        <span class="weather__city-name">深圳</span>
+                        <span class="weather__city-arrow"></span>
+                    </a>
+                    <a href="https://www.baidu.com/s?word=%E6%B7%B1%E5%9C%B3pm2.5&tn=50000030_hao_pg&ie=utf-8">
+                        <span class="weather_mass">优</span>
+                    </a>
+                    <a href="https://www.baidu.com/s?word=%E6%B7%B1%E5%9C%B3%E5%A4%A9%E6%B0%94&tn=50000030_hao_pg&ie=utf-8" target="_blank">
+                        <span class="weather_logo"></span>
+                        <span class="weather__info-txt">多云</span>
+                        <span class="weather__info-temperature">32 ~ 28℃</span>
+                    </a>
+                    <a href="http://www.weather.com.cn/weather/101280601.shtml#7d" target="_blank">
+                        <span class="weather_siite"></span>
+                    </a>
+                    <a href=""></a>
+                </div>
+                <!-- 地点天气信息end -->
+                <!-- 日期 -->
+                <div class="date">
+                    <a href="https://www.baidu.com/s?word=2017%E5%B9%B46%E6%9C%8803%E6%97%A5&tn=sitehao123_11_pg&ie=utf-8" target="_blank">
+                        <span>6月03日</span>
+                        <span>周六</span>
+                    </a>
+                    <a href="https://www.baidu.com/s?word=%E4%BA%94%E6%9C%88%E5%88%9D%E4%B9%9D&tn=sitehao123_11_pg&ie=utf-8" target="_blank">
+                        <span class="todate">五月初九</span>
+                    </a>
+                </div>
+                <!-- 日期end -->
+                <!-- 星座 -->
+                <div class="star">
+                    <a href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.hao123.com%2Fxingzuonew.html&amp;&amp;c=05D3721DBE22FDD8754B8B025E0BE700" alog-text="星座运势" class="headlink__link star__link s-wea">星座运势
+                	</a>
+                </div>
+                <!-- 星座end-->
+            </div>
+            <!-- 个人信心相关不分 -->
+            <div class="info">
+                <div class="login-info">
+                    <a class="login__link" href="#">
+                        <i class="login__icon"></i>
+                        <span class="headlink__text">登录</span>
+                    </a>
+                </div>
+                <div class="panlink">
+                    <a class="pan__link headlink__link s-wea" alog-text="网盘" href="https://pan.baidu.com/" target="_blank">网盘</a>
+                </div>
+                <div class="mail">
+                    <a class="mail__link" href="#" data-hook="trigger">邮箱
+                </a>
+                </div>
+                <div class="mobiletype">
+                    <a class="browser__link headlink__link s-wea" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.hao123.com%2Fshouji&amp;&amp;c=05D3721DBE22FDD8754B8B025E0BE700">手机版
+                </a>
+                </div>
+            </div>
+            <!-- 个人信息相关部分end -->
+        </div>
+    </div>
+    <!-- head部分end -->
+    <!-- 搜索栏部分 -->
+    <div class="hao123-searchbox">
+        <div class="searchbox-con">
+            <div class="form-right">
+                <div class="bdlogo">
+                    <a title="百度首页" href="https://www.baidu.com/">
+                        <span class="bdlo"></span>
+                    </a>
+                </div>
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" name="wd" class="search-input" id="searchInput">
+                    <button type="submit" class="search-btn">百度一下</button>
+                    <span class="icon-cam"></span>
+                </form>
+                <div class="change-color">
+                    <button id="btn-yellow"></button>
+                    <button id="btn-green"></button>
+                    <button id="btn-blue"></button>
+                </div>
+            </div>
+            <!-- 换肤重点 -->
+            <!-- 换肤重点 -->
+        </div>
+    </div>
+    <!-- 搜索栏部分end -->
+    <!-- 热点搜索部分 -->
+    <div class="hot-searchCon">
+        <ul class="hotbox">
+            <li class="title">
+                <a href="http://www.hao123.com/top" class="hotsearch-link" title="热搜" target="_blank">
+                </a>
+            </li>
+            <li class="text ">
+                <a href="https://www.baidu.com/s?word=%E6%B7%B1%E5%9C%B3%E5%A4%A9%E6%B0%94&tn=sitehao123_10_pg&ie=utf-8" data-lu="link">深圳天气
+                </a>
+            </li>
+            <li class="text ">
+                <a href="https://www.baidu.com/s?word=NBA&tn=sitehao123_10_pg&ie=utf-8" target="_blank">NBA</a></li>
+            </li>
+            <li class="text ">
+                <a href="https://www.baidu.com/s?word=%E6%9D%8E%E6%99%A8%E5%A6%B9%E5%A6%B9&tn=sitehao123_10_pg&ie=utf-8" target="_blank">李晨妹妹
+                </a>
+            </li>
+            <li class="text ">
+                <a href="https://www.baidu.com/s?word=%E4%B8%8B%E4%B8%80%E7%A7%92%E6%96%AD%E8%B4%A7%E7%8E%8B&tn=sitehao123_10_pg&ie=utf-8" target="_blank" style="color: red;">下一秒断货王
+                </a>
+            </li>
+            <li class="text ">
+                <a href="https://www.baidu.com/s?word=%E5%BC%A0%E7%BB%A7%E7%A7%91%E4%B8%8D%E6%95%8C%E6%9D%8E%E5%B0%9A%E6%B4%99&tn=sitehao123_10_pg&ie=utf-8" target="_blank" style="color: red;">张继科不敌李尚洙
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 主体部分 -->
+    <div class="hao123-body">
+        <div class="hao123con">
+            <!-- 需要变色部分 -->
+            <div class="navbody">
+                <ul class="menus" id="menus">
+                    <li class="first">
+                        <a class="link" href="https://www.hao123.com/" target="_self">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">电视剧</a>
+                    </li>
+                    <li>
+                        <a href="#">最新电影</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻头条</a>
+                    </li>
+                    <li>
+                        <a href="#">八卦娱乐</a>
+                    </li>
+                    <li>
+                        <a href="#">军事热点</a>
+                    </li>
+                    <li>
+                        <a href="#">热门游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">小游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">今日特价</a>
+                    </li>
+                    <li>
+                        <a href="#">特价旅游</a>
+                    </li>
+                    <li>
+                        <a href="#">今日特价</a>
+                    </li>
+                    <li class="lastlist">
+                        <a href="#">特价旅游</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 需要变色部分end -->
+            <div class="nav2body">
+                <span class="title">权威推荐</span>
+                <a href="http://www.people.com.cn/" target="_blank">人民网</a>
+                <a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+                <a href="http://www.cctv.com/" target="_blank">央视网</a>
+                <a href="http://www.cri.cn/" target="_blank">国际在线</a>
+                <a href="http://cn.chinadaily.com.cn/" target="_blank">中国日报</a>
+                <a href="http://www.china.com.cn/" target="_blank">中国网</a>
+                <a href="http://www.ce.cn/" target="_blank">中经网</a>
+                <a href="http://www.gmw.cn/" target="_blank">光明网</a>
+                <a href="http://www.cnr.cn/" target="_blank">央广网</a>
+                <a href="http://www.qstheory.cn/" target="_blank">求是网</a>
+                <a href="http://www.youth.cn/" target="_blank">中青网</a>
+                <a href="http://www.cac.gov.cn/" target="_blank">网信网</a>
+                <a href="http://www.gd.gov.cn/" target="_blank">广东政府</a>
+            </div>
+            <!-- 左边内容部分 -->
+            <div class="bodyleft">
+                <div class="topcon">
+                    <div class="starbar-list one">
+                        <a href="http://v.hao123.com/dianshi/" title="电视剧">电视剧</a>
+                        <span class="split">|</span>
+                        <a href="http://v.hao123.com/zongyi/" title="综艺">综艺</a>
+                    </div>
+                    <div class="starbar-list two">
+                        <a href="http://game.hao123.com/" title="游戏">游戏</a>
+                        <span class="split">|</span>
+                        <a href="http://xyx.hao123.com/" title="小游戏">小游戏</a>
+                    </div>
+                    <div class="starbar-list i-movie">
+                        <a href="http://v.hao123.com/dianying/" title="电影">电影</a>
+                        <span class="split">|</span>
+                        <a href="http://live.hao123.com/" title="直播">直播</a>
+                    </div>
+                    <div class="starbar-list i-comic">
+                        <a href="http://v.hao123.com/dongman/" title="动画">动画</a>
+                        <span class="split">|</span>
+                        <a href="http://www.hao123.com/manhua" title="漫画">漫画</a>
+                    </div>
+                    <div class="starbar-list i-toutiao">
+                        <a href="http://news.hao123.com/" title="新闻">新闻</a>
+                        <span class="split">|</span>
+                        <a href="http://tuijian.hao123.com/?type=military" title="军事">军事</a>
+                    </div>
+                    <div class="starbar-list i-travel ">
+                        <a href="http://go.hao123.com/sales?tn=mxlm" title="旅游" class="g_red">旅游</a>
+                        <span class="split">|</span>
+                        <a href="http://music.hao123.com/" title="音乐">音乐</a>
+                    </div>
+                    <div class="starbar-list i-caipiao">
+                        <a href="http://caipiao.hao123.com/" title="彩票">彩票</a>
+                        <span class="split">|</span>
+                        <a href="http://jingcai.hao123.com" title="竞猜">竞猜</a>
+                    </div>
+                    <div class="starbar-list i-gaoxiao">
+                        <a href="http://www.hao123.com/gaoxiao" title="搞笑">搞笑</a>
+                        <span class="split">|</span>
+                        <a href="http://hao123.zongheng.com" title="小说">小说</a>
+                    </div>
+                    <div class="starbar-list i-tuan">
+                        <a href="http://tejia.hao123.com/?tn=mxlm" title="特价">特价</a>
+                        <span class="split">|</span>
+                        <a href="http://shouji.hao123.com/?tn=mxlm" title="手机">手机</a>
+                    </div>
+                    <div class="starbar-list i-music">
+                        <a href="http://www.hao123.com/stocknew" title="股票">股票</a>
+                        <span class="split">|</span>
+                        <a href="http://8.hao123.com/" title="理财">理财</a>
+                    </div>
+                </div>
+                <!-- 左边下半部分 -->
+                <div class="downcon">
+                    <div class="toptab">
+                        <a class="channel" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Ftuijian.hao123.com%2F&amp;&amp;c=05D3721DBE22FDD8754B8B025E0BE700">
+                            <span class="s-br20 s-fc23 s-fc23h em">推荐</span>
+                        </a>
+                        <span class="line">|</span>
+                        <a class="channel" href="#">
+                            <span class="">社会</span>
+                        </a>
+                        <span class="line">|</span>
+                        <a class="channel" href="#">
+                            <span class="">娱乐</span>
+                        </a>
+                        <span class="line">|</span>
+                        <a class="channel" href="#" hidefocus="true" ">
+                        <span class=" ">军事</span>
+                        </a>
+                    </div>
+                    <div class="pic ">
+                    	<a href="http://news.ifeng.com/a/20170603/51194522_0.shtml?_zbs_hao123_pic#p=1 ">
+                    		<img src="./img/new.jpg ">
+                    		<span class="newtext ">台湾暴雨现场&nbsp;&nbsp;各种动物被冲上岸</span>
+                    	</a>
+                    </div>
+                </div>
+                <!-- 左边下半部分end -->
+            </div>
+            <!-- 左边内容end -->
+            <!-- 右半部分 -->
+            <div class="bodyright ">
+        	    <div class="famous-site ">
+        	         <div class="famous-siteup ">
+        	         	<ul class="famous-up ">
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li >
+        	         		    <a href="https://www.baidu.com/?tn=sitehao123_15 " target="_blank ">
+        	         		    	<span class="bdpic "></span>
+        	         		    	百度
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="https://tieba.baidu.com/ " target="_blank ">贴吧</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sina.com.cn/ " target="_blank ">
+        	         		    	<span class="xpic "></span>
+        	         		    	新浪
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://weibo.com/ " target="_blank ">微博</a>
+        	         		</li>
+        	         		<li >
+        	         		    <a href="http://www.sohu.com/ " target="_blank ">
+        	         		    	<span class="foxpic "></span>
+        	         		    	搜狐
+        	         		    </a> 
+        	         		  •
+        	         		    <a href="http://tuijian.hao123.com/ " target="_blank ">热点</a>
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.qq.com/ " target="_blank ">
+        	         		    	<span class="qpic "></span>
+        	         		    	腾&nbsp;&nbsp;讯
+        	         		    </a> 
+
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.163.com/ " target="_blank ">
+        	         		    	<span class="webpic "></span>
+        	         		    	网&nbsp;&nbsp;易
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.ifeng.com/ " target="_blank ">
+        	         		    	<span class="ifengpic "></span>
+        	         		    	凤凰网
+        	         		    </a> 
+        	         		  
+        	         		</li>
+        	         		<li class="fli ">
+        	         		    <a href="http://www.youku.com/ " target="_blank ">
+        	         		    	<span class="ypic "></span>
+        	         		    	优酷网
+        	         		    </a> 
+        	         		</li>
+        	         	</ul>	
+        	         </div>   
+        	    </div>
+        	    <div class="widget ">
+        	         <span >
+        	         <a href="http://www.baidu.com/dianjin.php?url=Kf0000KP1kVoaMJ0IoIaFuVisbLdc8-6d2QeeMY2UBjSsKuzcTz9UE3oJyRMcrdzK_cPo9pFdjAgLYxIJsAfZT4b3cFh7u5nsXxF7ZtD2kVn9nuO6zVfbX7IyRJy9HgYT672Y0Y.DY_jy1hzEBWsrwK-xZ68uxgKLsRP5QAeKPa-BG-dXHWdsRP5QGHTOKGm9ksqT7jHzYD1pyn5M8sSL_sSLksSXOjeThZxt_5M_sSEu9qxZj4qrZvOj9qx5o6CpXy7YNKnNKBrGMPRzO-3pMu_ovmJQnggKfYt_QrMAzONDk9tSMjlSrZdosSXejESZjltTSZ1en5o_sSL4mx5x9LSrZden5MY3xUu9vxg-SEzyFWA1IZWyAp7WFYvIPB6.mgK85R4NHDs0mvYqn0K9UHYs0APsm1Yk0AdY5H00ULnq0Aw-IWdrNRkn0ZKzU1YknfKWIjYkP1m0mv6qn0K8ugfqnfKLpyuG5HD0mgKsTv-b5Hc3mWKWrju-0AN3TjdWIZFxTHYknj0sQAPsUNqk5HDsQAPYT-qYThfqn10_ugFGTvNbgvdEuZN_uHYzQAqdIANzgvN3T7qYmyTqQ0K1pAqLgvN3TjY0Tv-b5HR4n1w9PHb3uHf1m16LmyD1njRzrHubu0KGTdqLpgF-UAN1T1Ys0ANzTAPEuARqRjcLP1D0mv7YuHYknj0znj0s0ZP-TMuGTjY63TBX9Zt0mLFW5Hc1PHDk " target="_blank ">大额贷款
+        	         </a>
+        	         </span>
+        	         <span ><a href="https://union-click.jd.com/jdc?d=KfBvm1 " target="_blank ">特价机票</a>
+        	         </span>
+        	         <span >
+        	         <a href="https://union-click.jd.com/jdc?d=jQ6fAj " target="_blank ">特价酒店</a>
+        	         </span>
+        	         <span >
+        	         <a href="https://www.baidu.com/s?wd=+%E4%BA%8C%E6%89%8B%E6%88%BF%E4%B9%B0%E5%8D%96+&tn=50000056_hao_pg&ie=UTF-8 " target="_blank ">二手房买卖
+        	         </a>
+        	         </span>
+        	         <span>
+        	         <a href="https://www.mzmoney.com/landing5.htm?d=pc&c=32&a=1&p=35&pl=hao123-wenzi-5&over=5 " target="_blank ">妙资理财</a>
+        	         </span>
+        	         <span data-hook="hlbarSpan ">
+        	         <a  href="https://www.itouzi.com/newuser/index/pcsemreg?s_label=hao1236lc " target="_blank ">100元理财</a>
+        	         </span>
+        	         <span>
+        	         <a href="https://www.zhudai.com/sem/index_pc.html?t=hao123G " target="_blank ">抵押贷款</a>
+        	         </span>
+        	         <span >
+        	         <a href="https://www.baidu.com/s?wd=%E4%B8%89%E5%B1%85%E6%96%B0%E6%88%BF&amp;tn=50000056_hao_pg&amp;ie=UTF-8 ">三居新房
+        	         </a>
+        	         </span>
+        	         <span >
+        	         <a href="https://www.baidu.com/s?wd=%E5%B0%8F%E6%9C%AC%E6%8A%95%E8%B5%84&amp;tn=50000056_hao_pg&amp;ie=UTF-8 ">小本投资</a>
+        	         </span>
+        	         <span >
+        	         <a  href="https://www.baidu.com/s?wd=%E8%8B%B1%E8%AF%AD30%E5%A4%A9&amp;tn=50000056_hao_pg&amp;ie=UTF-8 ">英语30天</a>
+        	         </span>
+        	         <span >
+        	         <a  href="https://www.baidu.com/s?wd=%E4%B9%B0%E6%88%BF%E6%94%BB%E7%95%A5&amp;tn=50000056_hao_pg&amp;ie=UTF-8 ">买房攻略</a>
+        	         </span>
+        	    </div>
+            </div>
+             <!-- 右半部分end -->
+        </div>
+        
+    </div>
+    <!-- 主体部分 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

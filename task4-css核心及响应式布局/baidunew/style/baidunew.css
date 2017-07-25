@@ -1,0 +1,609 @@
+/*选择屏幕*/
+@media only screen and (min-width:768px){
+	.pc{
+		display: block;
+
+		
+	}
+
+	.mobile{
+		display: none;
+	}
+
+}
+
+/*移动端显示*/
+@media only screen and (max-width:768px){
+	.pc{
+		display: none;
+	}
+	.mobile{
+		display: block;
+        min-width: 325px;
+	}
+}
+/*选择屏幕end*/
+/*初始化*/
+body ,.mobile,.pc{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*pc*/
+.pc .wrapper {
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+  
+}
+
+
+/*header*/
+.pc header{
+	width: 100%;
+	height: 60px;
+	
+	
+}
+.pc header nav{
+	z-index: 2;
+    color: #fff;
+    position: absolute;
+    /*iehack*/
+    right: 0;
+    top: 0;
+    width: 482px;
+    margin-top:20px;
+
+}
+
+.pc nav a{
+
+    float: left;
+    margin-left: 20px;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: underline;
+
+}
+.pc nav a:hover{
+	color: #00c;
+}
+
+/*设置*/
+.pc .setting-menu {
+    position: absolute;
+    width: 46px;
+    height: 24px;
+    right: 90px;
+    font-size: 13px;
+    text-align: center;
+}
+.setting-menu .baidu-setting {
+    position: absolute;
+    width: 60px;
+    top: 27px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+.pc .setting-menu a {
+   
+    font-weight: normal;
+    text-decoration: underline;
+}
+.setting-menu .baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    margin:0;
+}
+.setting-menu .baidu-setting a:hover {
+    color: #ffffff;
+    background-color: #3385ff;
+}
+.setting-menu .icon-triangle {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+/*设置end*/
+
+header nav .more {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+}
+/*header end*/
+
+
+/*更多产品*/
+.pc .more-product{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    min-height: 600px;
+    width: 80px;
+    border-left: 1px solid #ddd;
+   background-color: #f9f9f9;
+    display: none;
+    /*优先级*/
+    z-index: 999;
+}
+.more-product ul {
+    padding: 14px 5px 0 5px;
+    list-style-type: none;
+    text-align: center;
+}
+.more-product a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+.more-product li {
+    position: relative;
+    height: 65px;
+    border-bottom: 1px solid #ddd;
+}
+.more-product .more-sub-btn{
+    height: 30px;
+
+}
+.more-product span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: url(../img/moreproduct.png) no-repeat;
+}
+.more-product .more-sub-one {
+    background-position: -73px;
+}
+
+.more-product .more-sub-two {
+    background-position: -112px;
+}
+
+.more-product .more-sub-three {
+    background-position: -36px;
+}
+
+.more-product .more-sub-four {
+    background-position: -146px;
+}
+
+.more-product .more-sub-five {
+    background-position: -183px;
+}
+.more-product .more-all{
+    border: none;
+}
+.more-product .more-all a{
+    text-decoration: underline;
+
+}
+.more-product a:hover{
+    text-decoration: underline;
+
+}
+/*更多产品end*/
+
+
+/*内容部分*/
+.content{
+	width: 100%;
+	height: 420px;
+	text-align: center;
+	
+}
+.content .search-form {
+    position: relative;
+    height: 191px;
+
+}
+.content img {
+    width: 270px;
+    height: 129px;
+}
+.content .formset {
+    position: relative;
+    width: 650px;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+.content .search-input {
+    width: 540px;
+    height: 30px;
+    border: 1px solid #d0cccc;
+    padding: 2px 0px 2px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+.content .search-input:focus {
+    border-color: #3385ff;
+    /*在这个div外面有个轮廓*/
+    outline-offset: -10px;
+}
+.content .search-btn {
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    margin-left: -5px;
+      /*变成小手*/
+    cursor: pointer;
+}
+.content .search-btn:hover {
+    background-color: #317ef3;
+}
+/*相机图标设置*/
+.content .icon-cam {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 112px;
+    background: url(../img/camera.png) no-repeat;
+    cursor: pointer;
+}
+.content .icon-cam:hover {
+    background-position: 0 -20px;
+}
+
+/*内容部分end*/
+
+
+/*footer*/
+footer{
+	width: 100%;
+	height:115px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #999;
+    position: relative;
+    line-height: 10px;
+}
+footer p a {
+    color: #999;
+}
+footer .icon-copyright {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/copyright.png);
+    background-position: -600px 425px;
+}
+footer .icon-copyright2 {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/copyright.png);
+    background-position: -623px 425px;
+}
+/*footerend*/
+
+
+/*mobile*/
+/*头部*/
+#header{
+	background: rgba(247, 242, 242, 0.25);
+}
+
+#header .head{
+	width: 100%;
+	height: 35px;
+	margin-bottom: 9px;
+
+
+}
+
+/*wearther*/
+#header .weather{
+	position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 6px 0 14px;
+    height: 40px;
+    width: 143px;
+    line-height: 40px;
+   
+   
+}
+#header .weather .weather-icon{
+
+    position: relative;
+    top: 5px;
+    width:28px;
+    height:28px;
+    margin-left: -2px;
+    /*图片的大小和盒子的大小要相匹配，不然显示不了*/
+    background: url(../img/weather.png) center center no-repeat;
+    background-size: 28px 28px;
+    background-color:rgba(247, 242, 242, 0.25);
+    float: left;
+
+
+
+}
+#header .weather .weather-num{
+	float: left;
+	font-size: 29px;
+    color: #999;
+    padding-left: 4px;
+    padding-right: 3px;
+    font-weight: 300;
+}
+#header .weather .wheather-statu{
+	float: left;
+	width: 26px;
+	height: 28px;
+	margin-top: 6px;
+}
+#header .weather p{
+	height: 14px;
+    font-size: 10px;
+    color: #999;
+    line-height: 10px;
+    margin: 0;
+}
+#header .weather .icon-down{
+    width: 20px;
+    height: 37px;
+    
+    float: left;
+    background: url(../img/down.png)center center no-repeat;
+    background-size:10px 11px;
+    margin-top: 8px;
+}
+
+/*weather end*/
+
+#header .login{
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	width: 25px;
+	height:25px;
+	background: blue;
+    /*后面的会覆盖前面的，同样background的情况下*/
+    background: url(../img/login.png) center center no-repeat;
+    background-size: 25px 25px;
+
+}
+
+/*logo*/
+.mobile .logo{
+	width: 100%;
+	height: 75px;
+	box-sizing: border-box;
+	padding-bottom: 17px;
+    text-align: center;
+}
+.mobile .logo img{
+    width: 182px;
+    height: 57px;
+
+} 
+/*logo end*/
+/*搜索栏*/
+.mobile #header .search-form{
+	background: blue;
+    margin: 0 16px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+}
+.mobile #header .search-input{
+   width: 77%;
+   height: 45px;
+   box-sizing: border-box;
+}
+.mobile #header .search-btn{
+    width: 82px;
+    height: 46px;
+    background: #38f;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    /*规定文本不换行，除非遇到br*/
+    white-space: nowrap;
+    line-height: 45px;
+    color: #fff;
+    /*字符之间的间距*/
+    letter-spacing: -1px;
+    font-size: 16px;
+    border-top: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+    box-sizing: border-box;
+    -webkit-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-shadow: none;
+}
+.mobile .search-form .icon-mic{
+    width: 39px;
+    height: 39px;
+    
+    position: absolute;
+    top: 3px;
+    right:80px;
+    text-align: left;
+}
+/*实施before和after*/
+.mobile .search-form .icon-mic:before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    border: 4px solid transparent;
+    border-top-color: #717077;
+}
+.mobile .search-form .icon-mic:after{
+    content: "";
+    display: inline-block;
+    margin-top: 9px;
+    height: 20px;
+    width: 14px;
+    background: url(../img/mmsicon.png) 1px 0 no-repeat;
+    background-size: 33px 19px;
+}
+
+/*搜索栏end*/
+.mobile #header .menu{
+	width:100%;
+	height: 91px;
+	
+}
+.mobile #header .menu a{
+    display: block;
+    width: 28px;
+    height: 43px;
+   
+    float: left;
+    margin-left: 8%;
+    margin-top: 19px;
+}
+.mobile #header .menu i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    background: url(../img/menu.png)no-repeat;
+    background-size: 22px auto;
+}
+.mobile #header .menu span{
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #999;
+    text-decoration: none;
+}
+.mobile #header .menu-sub-1 i{
+    background-position: 0 -286px;
+}
+.mobile #header .menu-sub-2 i{
+    background-position: 0 -396px;
+}
+.mobile #header .menu-sub-3 i{
+    background-position: 0 -352px;
+}
+.mobile #header .menu-sub-4 i{
+    background-position: 0 -484px;
+}
+.mobile #header .menu-sub-5 i{
+    background-position: 0 -440px;
+}
+.mobile #header .menu-sub-6 i{
+    background-position: 0 -330px;
+}
+/*搜索栏end*/
+/*头部end*/
+
+/*新闻部分*/
+.mobile .news-list{
+    width: 100%;
+    height: 475px;
+}
+
+.mobile .news-list .new1{
+    width: 100%;
+    height:296px;
+    border-bottom: 1px solid #dfdada;
+}
+.mobile .new1 a{
+    text-decoration: none;
+    display: block;
+}
+.mobile .new1 .text-content{
+     
+     width: 343px;
+     margin: 0 auto;
+     margin-top:10px;
+ }
+
+.mobile .new1 .text-content h2{
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin:0; 
+}
+.mobile .new1 .large-pic{
+    width: 343px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.mobile .new1 span{
+    margin-right: 8px;
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+}
+
+.mobile .news-list .new2{
+   width: 100%;
+   height: 179px;
+ 
+}
+
+
+

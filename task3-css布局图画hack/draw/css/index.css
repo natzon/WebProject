@@ -1,0 +1,286 @@
+body {}
+
+.painting {
+    width: 400px;
+    height: 400px;
+    margin: 200px;
+    /*border: 5px solid;*/
+    /*background: yellow;*/
+}
+
+
+/*喷水*/
+.water1 {
+    width: 110px;
+    height: 50px;
+    overflow: hidden;
+    transform: translate(24px, 94px)rotate(-13deg);
+}
+.wp1 {
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-radius: 50%;
+    border-style: dashed;
+    transform: translate(66px, 1px);
+}
+.water2 {
+    width: 110px;
+    height: 50px;
+    overflow: hidden;
+    transform: translate(51px, 38px);
+}
+.wp2 {
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-radius: 50%;
+    border-style: dashed;
+    transform: translate(-63px, 1px);
+}
+/*喷水*/
+
+
+
+/*上半身*/
+.up {
+    /*  width: 180px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid;*/
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+    transform: translate(-11px, -84px)rotate(23deg)scaleY(1.1)scaleX(.3);
+    /*并不能设置下半身为透明，还有左半边和右半边*/
+    /*border-bottom: transparent;*/
+}
+.hid {
+    width: 190px;
+    height: 65px;
+    overflow: hidden;
+    transform: rotate(-12deg);
+    margin-bottom: -13px;
+    transform: scaleY(1.5) scalex(1) rotate(-10deg)translate(144px, 98px);
+}
+.up2 {
+    width: 180px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid;
+    /*并不能设置下半身为透明，还有左半边和右半边*/
+    /*border-bottom: transparent;*/
+}
+.hid3 {
+    width: 190px;
+    height: 65px;
+    overflow: hidden;
+    transform: rotate(-12deg);
+    margin-bottom: -13px;
+    transform: scaleY(1.5) scalex(1) rotate(-10deg);
+}
+/*上半身*/
+
+
+
+/*下半身*/
+
+.down {
+    width: 180px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid;
+    /*并不能设置下半身为透明，还有左半边和右半边*/
+    /*border-bottom: transparent;*/
+    margin-top: -106px;
+}
+.hid1 {
+    width: 190px;
+    height: 75px;
+    overflow: hidden;
+    margin-left: 36px;
+    margin-top: 0px;
+    /*transform: rotate(-10deg);*/
+    transform: translate(8px, -5px)scale(1.2)rotate(-5deg);
+}
+/*下半身*/
+
+
+
+/*翅膀*/
+.wingp1 {
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: -12px;
+}
+.winghid {
+    width: 60px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+    transform: translate(7px, -56px)rotate(-26deg);
+}
+.wingp2 {
+    width: 60px;
+    height: 0px;
+    border: 2px solid;
+        transform: rotate(62deg)translate(-27px, -29px);
+}
+.wing {
+    /*transform: translate(143px,-77px)scale(1,.8);*/
+    width: 44px;
+    height: 24px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 345px;
+    top: 80%;
+    border-bottom-left-radius: 11px;
+    border-top-right-radius: 12px;
+    /*动画名字 持续时间 时间间隔 过度类型 重复次数*/
+    -webkit-animation: tada 5s .3s ease infinite;
+}
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    10%,
+    20% {
+        -webkit-transform: scale(.9) rotate(-6deg)
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale(1) rotate(6deg)
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale(1) rotate(-6deg)
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(0)
+    }
+}
+
+
+
+
+/*眉毛*/
+.part1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin-top: 15px;
+}
+.eyebrow {
+    width: 40px;
+    height: 25px;
+    overflow: hidden;
+    transform: rotate(10deg);
+    margin-top: -46px;
+    margin-left: 35px;
+    transform: rotate(10deg)translate(40px, -19px)scale(.6);
+}
+/*眉毛*/
+
+
+
+/*眼睛*/
+.eye {
+    width: 20px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid;
+    overflow: hidden;
+    margin-left: 34px;
+    transform: translate(45px, -14px) scale(.6);
+}
+.col {
+    width: 30px;
+    height: 20px;
+    background: #0e0e0e;
+    margin-top: 22px;
+}
+/*眼睛*/
+
+
+
+
+
+/*嘴巴*/
+.uline {
+    width: 110px;
+    height: 40px;
+    overflow: hidden;
+    transform: scalex(1.2)translate(12px, 7px)rotate(-5deg);
+}
+.p1 {
+    width: 100px;
+    height: 80px;
+    border: 5px solid;
+    border-radius: 50%;
+    margin-top: -61px;
+}
+/*嘴巴*/
+
+
+
+
+/*尾巴*/
+.part2 {
+    width: 80px;
+    height: 60px;
+    border: 5px solid;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.uptail {
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    transform: rotate(-34deg)translate(8px, 2px);
+    margin-left: -36px;
+    margin-bottom: -13px;
+    margin-top: 13px;
+}
+.middletail {
+    width: 48px;
+    height: 60px;
+    border: 5px solid;
+    transform: rotate(20deg);
+    border-right: 0;
+    border-top: 0;
+    margin-left: 37px;
+    margin-top: -24px;
+    border-radius: 36%;
+    transform: rotate(20deg);
+}
+.part3 {
+    width: 80px;
+    height: 60px;
+    border: 5px solid;
+    border-radius: 50%;
+    margin-top: -40px;
+}
+.downtail {
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    transform: rotate(-4deg);
+    margin-left: -9px;
+}
+
+.tail {
+    margin-left: 192px;
+    margin-top: -109px;
+    float: left;
+    transform: translate(39px, -7px);
+}
+/*尾巴*/
+
+
+

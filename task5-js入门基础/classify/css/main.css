@@ -1,0 +1,34 @@
+body{
+	margin：0;
+	padding：0;
+}
+
+/*head部分*/
+.head{
+	width: 100%;
+	text-align: center;
+	background-color: #eee;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.head h1{
+	margin: 0;
+	padding: 0;
+}
+/*head部分end*/
+
+/*grade-input部分*/
+.grade-input{
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+
+/*grade-output部分*/
+.grade-output{
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+

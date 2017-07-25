@@ -1,0 +1,22 @@
+/*内边宽和外边宽,*是选择全部的意思*/
+*{
+	padding: 0;
+	margin: 0;
+
+}
+ table {
+    width: 500px;
+    border-collapse:collapse;
+    /*行间距*/
+    line-height: 50px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+table,th,tr,td{
+  border: 1px solid #F00
+}
+
+td,th{
+	width: 60px;
+}

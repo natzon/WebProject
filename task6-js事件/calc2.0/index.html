@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!-- 计算器布局 -->
+    <div class="head">
+        <h1>简易计算器</h1>
+    </div>
+    <div class="calculate">
+        <input type="text" name="" id="screen" value="0">
+        <!-- 数字运算符部分 -->
+        
+        <ul class="uleft">
+            <li>
+                <input type="button" value="7" onclick="inputNum(7)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="8" onclick="inputNum(8)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="9" onclick="inputNum(9)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="/" onclick="divide()" class="btn">
+            </li>
+            <li>
+                <input type="button" value="%" onclick="persent()" class="btn">
+            </li>
+        </ul>
+        <ul class="uleft">
+            <li>
+                <input type="button" value="4" onclick="inputNum(4)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="5" onclick="inputNum(5)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="6" onclick="inputNum(6)" class="btn">
+            </li>
+            <li>
+                <input type="button" value="*" onclick="multi()" class="btn">
+            </li>
+            <li>
+                <input type="button" value="√" onclick="square()" class="btn">
+            </li>
+        </ul>
+        <!-- 下面两行的格式 -->
+            <ul class="uleft">
+                <li>
+                    <input type="button" value="1" onclick="inputNum( 1)" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="2" onclick="inputNum(2)" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="3" onclick="inputNum(3)" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="-" onclick="minus()" class="btn">
+                </li>
+            </ul>
+            <ul class="uleft">
+                <li>
+                    <input type="button" value="C" onclick="clearscreen()" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="0" onclick="inputNum(0)" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="." onclick="dot()" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="+" onclick="plus()" class="btn">
+                </li>
+            </ul>
+            <ul class="uleft">
+                <li>
+                    <input type="button" value="←" onclick="del()" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="sin()" onclick="bsin()" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="cos()" onclick="bcos()" class="btn">
+                </li>
+                <li>
+                    <input type="button" value="+" onclick="plus()" class="btn">
+                </li>
+            </ul>
+            <ul class="uright">
+            	<li>
+                    <input type="button" value="=" onclick="equal()" class="btn">
+                </li>
+            </ul>
+    </div>
+    <span id="as"></span>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

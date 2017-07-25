@@ -1,0 +1,90 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-p_amd_f9f0c7f {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -227px;
+  width: 110px;
+  height: 30px;
+}
+.icon-p_bootstrap_d0a74f3 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -111px;
+  width: 125px;
+  height: 28px;
+}
+.icon-p_cloudstack_6ecabb3 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -661px;
+  width: 104px;
+  height: 36px;
+}
+.icon-p_cocos_2a0a8f3 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -347px;
+  width: 120px;
+  height: 31px;
+}
+.icon-p_juhe_25bbedf {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -287px;
+  width: 125px;
+  height: 30px;
+}
+.icon-p_microsoft_82f9a9a {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -54px;
+  width: 125px;
+  height: 27px;
+}
+.icon-p_qcloud_ab76cc7 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -408px;
+  width: 110px;
+  height: 32px;
+}
+.icon-p_qualcomm_362a472 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -169px;
+  width: 125px;
+  height: 28px;
+}
+.icon-p_tencent_47175aa {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px 0px;
+  width: 125px;
+  height: 24px;
+}
+.icon-p_tingyun_c2752df {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -533px;
+  width: 92px;
+  height: 34px;
+}
+.icon-p_tuling_3ec6ea2 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -470px;
+  width: 83px;
+  height: 33px;
+}
+.icon-p_xunfei_d1cd670 {
+  background-image: url(../sprite-partner.png);
+  background-position: 0px -597px;
+  width: 111px;
+  height: 34px;
+}

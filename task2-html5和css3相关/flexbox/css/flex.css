@@ -1,0 +1,143 @@
+* {
+    /*初始化一下*/
+    margin: : 0； padding: 0;
+}
+
+.cont {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.col {
+    /*先写一个默认的*/
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    -column-width: 150px;
+    -webkit-column-width: 150px;
+    -webkit-column-rule-style: dotted;
+}
+
+.center {
+    /*展示出对应的webkit的盒子*/
+    display: -webkit-box;
+    /*水平居中*/
+    -webkit-box-pack: center;
+    /*垂直居中*/
+    -webkit-box-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+}
+
+
+/*下面是flexbox里面的相关设置*/
+
+.content {
+    /*这是新版的flex*/
+    display: -webkit-flex;
+    width: 600px;
+    background-color: green;
+    /*column列的意思*/
+    -webkit-flex-direction: column;
+    height: 600px;
+}
+
+.first {
+    height: 100px;
+    background-color: orange;
+    -webkit-flex: 1;
+    /*兼容性代码*/
+    order: 3;
+    -moz-order: 3;
+    -ms-order: 3;
+    -o-order: 3;
+    -webkit-order: 3;
+}
+
+.second {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: aquamarine;
+    order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    -o-order: 1;
+    -webkit-order: 1;
+}
+
+.third {
+    height: 200px;
+    -webkit-flex: 1;
+    background-color: #e3ff7f;
+    order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    -o-order: 2;
+    -webkit-order: 2;
+}
+
+.one {
+    height: 100px;
+    background-color: orange;
+    -webkit-flex: 1;
+}
+
+.two {
+    height: 100px;
+    background-color: aquamarine;
+    -webkit-flex: 1;
+}
+
+.three {
+    height: 200px;
+    background-color: #e3ff7f;
+    -webkit-flex: 1;
+}
+
+.con {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    width: 600px;
+}
+
+
+/*box相关css*/
+
+.shoe {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.shoebox {
+    margin: 100px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 10px dashed red;
+    overflow: scroll;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.shoe1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.shoebox1 {
+    margin: 50px 0px 0px 100px;
+    padding: 10px;
+    height: 140x;
+    width: 140px;
+    background-color: aqua;
+    border: 10px dashed red;
+    /*默认的是content box标准盒模型，border-box要算填充物和材质*/
+    box-sizing: border-box;
+    overflow: scroll;
+}

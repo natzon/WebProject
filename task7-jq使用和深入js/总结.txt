@@ -1,0 +1,6 @@
+    通过本次任务，学习到的知识有：
+1.用jq遍历元素，过滤元素   2.标签栏的切换   3.jq的fadeIn和fadeOut动画  4.用 event.stopPropagation()阻止冒泡  5.一些调试方法。
+
+    巩固并熟悉了的知识有：
+1.css的animation和transition方法。2.relative和absolute的使用。
+感想：真的要多写代码才有提高，之前虽然很多知识都是知道的，但是用起来总是不顺手，要查资料，写的多了，才能够直接就拿来用。

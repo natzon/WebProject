@@ -1,0 +1,2 @@
+1.用到了遍历函数
+2.用到了dom的geElementById

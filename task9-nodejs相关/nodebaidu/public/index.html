@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配当前屏幕 -->
+    <meta name="viewport" content="width=device-width ,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="cf">
+            <a href="#" class="logo float-left"></a>
+            <a href="#" class="user float-left"></a>
+            <a href="#" class="search float-right"></a>
+            <a href="#" class="more float-right"></a>
+        </header>
+        <!-- 导航部分 -->
+        <nav>
+            <ul>
+                <li><a href="#">推荐</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">搞笑</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">科技</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <!-- 主体内容 -->
+        <article class="news-main">
+            <ul class="news-lists" id="lists">
+                <!-- 这里自动添加新闻 -->
+            </ul>
+        </article>
+    </div>
+    <!-- 这个js代码使用来实现给li划分宽度 -->
+    <script src="./js/jquery-3.2.0.min.js"></script>
+    <!-- $是jq里面才有的东西，不是原生的js -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // 新技能get
+        var deviceWidth = $("body").width();
+        $("nav li").each(function(index, item) {
+            // 拆分长度
+            if ($(this).find("a").html().split("").length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        })
+    })
+    </script>
+    <script type="text/javascript" src='./js/news.js'></script>
+</body>
+
+</html>

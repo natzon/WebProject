@@ -1,0 +1,15 @@
+body{
+   padding: 0;
+   margin: 0;
+}
+
+h1{
+	text-align: center;
+}
+
+.content{
+	width: 80%;
+	margin: 0 auto;
+	background: #e9e9e9;
+	
+}

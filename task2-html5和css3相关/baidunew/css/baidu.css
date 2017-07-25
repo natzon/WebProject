@@ -1,0 +1,251 @@
+.wrapper {
+    height: 100%;
+    position: relative;
+    /*设置最小宽度，保证上下左右的稳定*/
+    min-width: 810px;
+    min-height: 600px;
+}
+
+body {
+    font: 12px arial;
+}
+
+
+/*一定要初始化*/
+
+html,
+body {
+    height: 100%
+}
+
+header nav {
+    width: 425px;
+    /*提供三个值，一个用于上，第二个用于左右，四三个用于下*/
+    margin: 19px 0 5px;
+    padding: 0 96px 0 0;
+    line-height: 24px;
+    font-size: 13px;
+    float: right;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+#load {
+    font-weight: normal;
+}
+
+.content {
+    text-align: center;
+    clear: both;
+}
+
+
+/*搜索栏部分*/
+
+.formtest {
+    width: 580px;
+    margin: 10px auto;
+    position: relative;
+}
+
+
+/*空格是后代继承器*/
+
+.content form span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /*背景图像只显示一次*/
+    background: url(../img/camera_new_5606e8f.png) no-repeat;
+    /*鼠标移动到该位置后光标的变化*/
+    cursor: pointer;
+    right: 135px;
+    top: 10px;
+}
+
+.content form span:hover {
+    background-position: 0 -20px;
+}
+
+.content input {
+    width: 450px;
+    height: 36px;
+    float: left;
+    outline: 0;
+    /*要自己写边框，不能用他默认的*/
+    border: 1px solid #ccc;
+    /*向前缩进*/
+    text-indent: 7px;
+}
+
+.content input:hover {
+    border-color: #999;
+}
+
+
+/*focus后变位蓝边*/
+
+.content input:focus {
+    border-color: #38f;
+}
+
+.content button {
+    width: 100px;
+    height: 39px;
+    background-color: #38f;
+    color: #fff;
+    float: left;
+    outline: 0;
+    border: 0;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*手机二维码部分*/
+
+.bdcode {
+    width: 100%;
+    height: 60px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bdcode img {
+    vertical-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+
+/*底部信息*/
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 502px;
+    left: 50%;
+    margin-left: -251px;
+}
+
+footer a {
+    color: #999;
+    margin-left: 25px;
+}
+
+footer b {
+    color: #666;
+    font-weight: 700;
+}
+
+
+/*单独设置下第二行*/
+
+.second {
+    text-align: center;
+}
+
+.second a {
+    margin-left: 0px;
+}
+
+#aother {
+    margin-left: 25px;
+}
+
+ul,
+li {
+    /*将前面的点点给去掉*/
+    list-style: none;
+}
+
+
+/*设置的那个div*/
+
+.setting {
+    /*设置粗细*/
+    border: 1px none #ccc;
+    /*超过其指定高度时，如何管理内容*/
+    overflow: none;
+    position: absolute;
+    top: 19px;
+    right: 117px;
+}
+
+.setting a {
+    font-weight: normal;
+}
+
+.setting ul {
+    /*此元素不会被显示*/
+    /*设置下拉的定位,位置调整好了，就不会变位了*/
+    display: none;
+    position: absolute;
+    top: 10PX;
+    right: -47px;
+}
+
+.setting li {
+    width: 100px;
+}
+
+.setting:hover ul {
+    display: block;
+}
+
+
+/*这里是按钮*/
+
+.setting2 button {
+    /*这是白色的字体*/
+    color: #fff;
+    background-color: #38f;
+    border: 0;
+    position: absolute;
+    right: 28px;
+}
+
+
+/*这里是设置更多产品*/
+
+.setting2 {
+    overflow: none;
+    float: right;
+    margin-right: 2px;
+}
+
+.setting2 a {
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+.setting2 img {
+    width: 80px;
+    height: 80px;
+}
+
+.setting2 ul {
+    /*给下拉定位下*/
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: -31px;
+}
+
+
+/*hover当鼠标滑过时显示的事务*/
+
+.setting2:hover ul {
+    display: block;
+}

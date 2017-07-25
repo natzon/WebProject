@@ -1,0 +1,47 @@
+<!-- 为什么用一个form表单将center里面的元素包起来后，点击按钮后，结果显示不出来 -->
+<!--
+<form>
+     <input type="text" name="num1" id="num1" value="0">
+		<select name="calculate" id="calculate">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" name="num2" id="num2" value="0">
+		<button onclick="calc()">等于</button>
+		<span id="rel"></span>
+</form> 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>简易计算器</title>
+</head>
+<body>
+<!-- 标题 -->
+	<div class="head">
+		<h1>简易计算器</h1>
+	</div>
+	<!-- 居中盒子 -->
+	<div class="center">
+
+		<input type="text" name="num1" id="num1" value="0">
+		<select name="calculate" id="calculate">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" name="num2" id="num2" value="0">
+		<button onclick="calc()">等于</button>
+		<span id="rel"></span>
+
+		
+		
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+</html>

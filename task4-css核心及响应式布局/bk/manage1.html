@@ -1,0 +1,227 @@
+<!-- 写代码一定要边写边验证，不然调试都不好调试的 -->
+<!-- 1.怎么用百分比布局，我想用height=15%，height=75%，height=15%，手机屏幕分为3部分，可是不行，还是用了px为单位 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/manage1.css">
+	<!-- 这行缩放代码是必须要的 -->
+	<meta charset="utf-8" name="viewport" content="device-width,initial-scale=1">
+
+	<title>后台管理系统</title>
+</head>
+<body>
+	<div class="pc">
+	    <!-- header部分 -->
+		<div class="header">
+		<!-- 导航栏相关部分 -->
+			<div class="w-1300">
+				 <a href="#" class="brand">
+				 	<span class="glyphicon glyphicon-wrench"></span>
+				 	后台管理界面
+				 </a>
+				 <!-- 图标盒子 -->
+				 <div class="icon-box">
+				 	<span class="glyphicon glyphicon-search icon-search"></span>
+				 	<span class="glyphicon glyphicon-user"></span>
+				 </div>
+			</div>
+		</div>
+		<!-- 菜单栏部分................................................................ -->
+		<div class="menu">
+			<ul>
+                <!-- 首页 -->
+                <li class="home">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <!-- 资料中心 -->
+                <li class="data-center">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>资料中心</span>
+                    </a>
+                </li>
+                <!-- 工作中心 -->
+                <li class="work-center">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        <span>工作中心</span>
+                    </a>
+                </li>
+                <!-- 推广中心 -->
+                <li class="spread-center">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-hand-up"></i>
+                        <span>推广中心</span>
+                    </a>
+                </li>
+                <!-- 客服中心 -->
+                <li class="custom-center">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-phone-alt"></i>
+                        <span>客服中心</span>
+                    </a>
+                </li>
+                <!-- 飞鹰学院 -->
+                <li class="hawk-colleage">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>飞鹰学院</span>
+                    </a>
+                </li>
+                <!-- 飞鹰社区 -->
+                <li class="HawkCom">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-th"></i>
+                        <span>飞鹰社区</span>
+                    </a>
+                </li>
+            </ul>
+		</div>
+		<!--菜单栏部分end.............................................................-->
+		<!-- 内容部分 -->
+		<div class="content">
+		<!-- 导航栏部分 -->
+			<ul class="nav-tabs nav">
+                <li>
+                    <a href="">我的计划</a>
+                </li>
+                <li>
+                    <a href="">工作记录</a>
+                </li>
+            </ul>
+            <h3>邀约记录</h3>
+            <!-- 表单部分 -->
+            <div class="form">
+
+            	<form class="form-horizontal">
+            		<div class="control-group">
+                            <label class="control-lable">日期:</label>
+                            <input type="data" name="">
+                            <label>人物:</label>
+                            <select>
+                                <option value="zhangsan">张三</option>
+                                <option value="lisi">李四</option>
+                            </select>
+                            <label>该记录:</label>
+                            <input type="radio" name="record" value="view">显示
+                            <input type="radio" name="record" value="invisible">不显示
+                    </div>
+                    <div class="control-group">
+                            <label class="lab-block">记录:</label>
+                            <textarea rows="5" cols="60"></textarea>
+                    </div>
+                    <div class="control-group">
+                            <label class="control-lable">日期:</label>
+                            <input type="data" name="">
+                            <label>人物:</label>
+                            <select>
+                                <option value="zhangsan">张三</option>
+                                <option value="lisi">李四</option>
+                            </select>
+                            <label>该记录:</label>
+                            <input type="radio" name="record" value="view">显示
+                            <input type="radio" name="record" value="invisible">不显示
+                    </div>
+                    <div class="control-group">
+                            <label class="lab-block">记录:</label>
+                            <textarea rows="5" cols="60"></textarea>
+                    </div>
+                    <div class="control-group">
+                            <label class="control-lable">日期:</label>
+                            <input type="data" name="">
+                            <label>人物:</label>
+                            <select>
+                                <option value="zhangsan">张三</option>
+                                <option value="lisi">李四</option>
+                            </select>
+                            <label>该记录:</label>
+                            <input type="radio" name="record" value="view">显示
+                            <input type="radio" name="record" value="invisible">不显示
+                    </div>
+                    <div class="control-group">
+                            <label class="lab-block">记录:</label>
+                            <textarea rows="5" cols="60"></textarea>
+                    </div>
+                    <div class="control-group">
+                    	 <input type="submit" name="" class="btn btn-primary btn-1300" value="保存">
+                    </div>
+                   
+            	</form>
+            </div>
+		</div>
+		<!-- 内容部分................................................................ -->
+	</div>
+	<!-- mobile部分............................................................... -->
+	<div class="mobile">
+	<!-- header -->
+		<div class="header">
+			<div class="w-600">
+				<a href="#" class="brand1">
+					<span class="glyphicon glyphicon-wrench">
+						后台管理界面
+					</span>
+				</a>
+			</div>
+		</div>
+		<!--content-->
+		<div class="content1">
+		<!-- ul -->
+		<ul class="nav-tabs nav">
+                <li>
+                    <a href="">我的计划</a>
+                </li>
+                <li>
+                    <a href="">工作记录</a>
+                </li>
+         </ul>
+		   <div class="form1">
+		       <h3>邀约记录</h3>
+		   	   <form class="form-horizontal">
+		   	   	    <div class="control-group">
+		   	   	    	<label class="control-lable">日期:</label>
+                        <input type="data" name="" id="data1">
+                        
+		   	   	    </div>
+		   	   	    <div class="control-group">
+		   	   	    	<label class="lab-block">记录:</label>
+		   	   	    </div>
+		   	   	    <div class="control-group">
+		   	   	    	<textarea rows="5" cols="30"></textarea>
+		   	   	    </div>
+		   	   	    <div class="control-group">
+		   	   	    	<label class="control-lable">日期:</label>
+                        <input type="data" name="" id="data1">
+                        
+		   	   	    </div>
+		   	   	    <div class="control-group">
+		   	   	    	<label class="lab-block">记录:</label>
+		   	   	    </div>
+		   	   	    <div class="control-group">
+		   	   	    	<textarea rows="5" cols="30"></textarea>
+		   	   	    </div>
+		   	   	     <div class="control-group">
+		   	   	     <input type="submit" name="" class="btn btn-primary btn-600" value="保存">
+		   	   	     </div>
+		   	   	    
+		   	   </form>
+		   </div>
+
+			
+		</div>
+		<!-- 底部菜单栏部分 -->
+		<div class="footer">
+			<div class="foot-menu">
+				<span class="glyphicon glyphicon-th-list"></span>
+				<span class="glyphicon glyphicon-user"></span>
+			</div>
+				
+		</div>
+		
+	</div>
+</body>
+</html>

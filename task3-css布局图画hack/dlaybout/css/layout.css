@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*要设置最小宽度，不然内容会不见*/
+    background-color: #fff;
+    min-width:800px;
+
+}
+
+header {
+    background-color: rgba(158, 158, 158, 0.28);
+    height: 64px;
+}
+
+article {
+    /*这个是不能设置高度的，不然会遮住内容*/
+    background-color: #fff;
+/*    height:500px;*/
+    /*padding-left: 150px;
+	padding-right: 100px;*/
+    overflow: hidden;
+}
+
+article .left {
+    background-color: rgba(158, 158, 158, 0.28);
+    float: left;
+  
+    width: 150px;
+    /*	height: 20px;*/
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    margin-top: 5px;
+    line-height: 25px;
+    /*	position: relative;
+	left: -150px;
+*/
+}
+
+article .middle {
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.inner {
+    margin-left: 155px;
+    margin-top: 5px;
+    margin-right: 105px;
+    background-color: rgba(158, 158, 158, 0.28);
+    line-height: 25px;
+    /*不能设置高度，不然会遮住内容*/
+   /* height: 500px;*/
+
+}
+.inner p{
+	text-indent: 20px;
+
+}
+
+article .right {
+    background-color: rgba(158, 158, 158, 0.28);
+    float: left;
+    width: 100px;
+    /*height: 20px;*/
+    /*自己撑开*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    margin-left: -100px;
+    margin-top: 5px;
+    /*overflow: scroll;*/
+    /*	border: 5px solid red*/
+    /*  border:5px solid red;*/
+    /*	position: relative;
+	right: -100px;*/
+}
+
+
+/*空格后面跟后代*/
+
+footer {
+    background-color: rgba(158, 158, 158, 0.28);
+    height: 45px;
+}

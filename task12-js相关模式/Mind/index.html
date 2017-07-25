@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>高级前端工程师面试题</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+    	<h1>前端工程师面试题</h1>
+    <h2>html</h2>
+    <ol>
+        <li>
+            <p>Doctype作用？标准模式与兼容模式各有什么区别?</p>
+            <p>
+        	（1）、&lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 &lt;html&gt; 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。<br>
+
+			（2）、标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
+            </p>
+        </li>
+        <li>
+            <p>HTML5 为什么只需要写 <!DOCTYPE HTML>？</p>
+            <p>
+        	 HTML5 不基于SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行)；<br>
+ 			而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+            </p>
+        </li>
+        <li>
+            <p>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</p>
+            <p>
+        	 首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>
+
+			（1）行内元素有：a b span img input select strong（强调的语气）<br>
+			（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p<br>
+
+			（3）常见的空元素：<br>
+			    &lt;br&gt; &lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;<br>
+			    鲜为人知的是：<br>
+			    &lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;
+            </p>
+        </li>
+        <li>
+            <p>页面导入样式时，使用link和@import有什么区别？</p>
+            <p>
+        	（1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>
+
+			（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>
+
+			（3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>
+
+            </p>
+        </li>
+        <li>
+            <p>页面导入样式时，使用link和@import有什么区别？</p>
+            <p>
+        	（1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>
+
+			（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>
+
+			（3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>
+
+            </p>
+        </li>
+        <li>
+            <p>介绍一下你对浏览器内核的理解？</p>
+            <p>
+        	主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎<br>
+
+			渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。<br>
+
+			JS引擎则：解析和执行javascript来实现网页的动态效果。<br>
+			最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎
+
+            </p>
+        </li>
+        <li>
+            <p>常见的浏览器内核有哪些？</p>
+            <p>
+        	Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>
+
+			Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等<br>
+
+			Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;]<br>
+			Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]
+
+            </p>
+        </li>
+        <li>
+            <p>常见的浏览器内核有哪些？</p>
+            <p>
+        	Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>
+
+			Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等<br>
+
+			Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;]<br>
+			Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]
+
+            </p>
+        </li>
+        <li>
+            <p>html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</p>
+            <p>
+        	* HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
+		      绘画 canvas;<br>
+		      用于媒介回放的 video 和 audio 元素;<br>
+		      本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;<br>
+		      sessionStorage 的数据在浏览器关闭后自动删除;<br>
+		      语意化更好的内容元素，比如 article、footer、header、nav、section;<br>
+		      表单控件，calendar、date、time、email、url、search;<br>
+		      新的技术webworker, websocket, Geolocation;<br>
+
+			  移除的元素：<br>
+			      纯表现的元素：basefont，big，center，font, s
+			      ，strike，tt，u;
+			      对可用性产生负面影响的元素：frame，frameset，noframes；<br>
+
+				* 支持HTML5新标签：<br>
+				     IE8/IE7/IE6支持通过document.createElement方法产生的标签，
+				     可以利用这一特性让这些浏览器支持HTML5新标签，
+				     浏览器支持新标签后，还需要添加标签默认的样式。<br>
+
+				     当然也可以直接使用成熟的框架、比如html5shim;<br>
+				     &lt;!--[if lt IE 9]&gt;
+				       &lt;script&gt; src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;
+				     &lt;![endif]--&gt;
+
+				* 如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素
+
+            </p>
+        </li>
+        <li>
+            <p>简述一下你对HTML语义化的理解？</p>
+            <p>
+        	用正确的标签做正确的事情。
+			html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;
+			即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;
+			搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;
+			使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+            </p>
+        </li>
+    </ol>
+    <h2>css</h2>
+    <ol>
+    	<li>
+            <p>CSS隐藏元素的几种方法（至少说出三种）</p>
+            <p>
+        	Opacity:元素本身依然占据它自己的位置并对网页的布局起作用。它也将响应用户交互;<br>
+			Visibility:与 opacity 唯一不同的是它不会响应任何用户交互。此外，元素在读屏软件中也会被隐藏;<br>
+			Display:display 设为 none 任何对该元素直接打用户交互操作都不可能生效。此外，读屏软件也不会读到元素的内容。这种方式产生的效果就像元素完全不存在;<br>
+			Position:不会影响布局，能让元素保持可以操作;<br>
+			Clip-path:clip-path 属性还没有在 IE 或者 Edge 下被完全支持。如果要在你的 clip-path 中使用外部的 SVG 文件，浏览器支持度还要低;
+            </p>
+        </li>
+        <li>
+            <p>.CSS清除浮动的几种方法（至少两种）</p>
+            <p>
+        	使用带clear属性的空元素
+			使用CSS的overflow属性；
+			使用CSS的:after伪元素；
+			使用邻接元素处理；
+            </p>
+        </li>
+        <li>
+            <p>CSS居中（包括水平居中和垂直居中）</p>
+            <h3>内联元素居中方案</h3>
+            <p>
+        	水平居中设置：<br>
+			1.行内元素
+
+			设置 text-align:center；<br>
+			2.Flex布局
+
+			设置display:flex;justify-content:center;(灵活运用,支持Chroime，Firefox，IE9+)\<br><br>
+			垂直居中设置：<br>
+			1.父元素高度确定的单行文本（内联元素）
+
+			设置 height = line-height；<br>
+			2.父元素高度确定的多行文本（内联元素）
+
+			a:插入 table （插入方法和水平居中一样），然后设置 vertical-align:middle；
+			b:先设置 display:table-cell 再设置 vertical-align:middle；
+            </p>
+            <h3>块级元素居中方案</h3>
+            <p>
+            	水平居中设置：<br>
+				1.定宽块状元素
+				设置 左右 margin 值为 auto；<br>
+				2.不定宽块状元素
+
+				a:在元素外加入 table 标签（完整的，包括 table、tbody、tr、td），该元素写在 td 内，然后设置 margin 的值为 auto；
+				b:给该元素设置 displa:inine 方法；
+				c:父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left:50%；<br><br>
+				垂直居中设置：
+
+				使用position:absolute（fixed）,设置left、top、margin-left、margin-top的属性;<br>
+				利用position:fixed（absolute）属性，margin:auto这个必须不要忘记了;<br>
+				利用display:table-cell属性使内容垂直居中;<br>
+				使用css3的新属性transform:translate(x,y)属性;<br>
+				使用:before元素;
+            </p>
+        </li>
+        <li>
+            <p>对于SASS或是Less的了解程度？喜欢那个？</p>
+            <p>
+        	1.定义变量用@,除了用变量存储公用的属性值，我们还可以用变量存储公用的URL、选择器等等<br>
+        	2.混合，混合可以将一个定义好的class A轻松的引入到另一个class B中，从而简单实现class B继承class A中的所有属性。我们还可以带参数地调用，就像使用函数一样。<br>
+        	3.嵌套规则，我们可以在一个选择器中嵌套另一个选择器来实现继承，这样很大程度减少了代码量，并且代码看起来更加的清晰。<br>
+        	4.函数和运算，运算提供了加，减，乘，除操作；我们可以做属性值和颜色的运算，这样就可以实现属性值之间的复杂关系。LESS中的函数一一映射了JavaScript代码，如果你愿意的话可以操作属性值。
+            </p>
+        </li>
+        <li>
+            <p>Bootstrap了解程度</p>
+            <p>
+        	1.特点：为所有开发者、所有应用场景而设计。预处理脚本。一个框架、多种设备。特性齐全<br>
+        	2.排版：
+        	(1)标题.
+			HTML 中的所有标题标签，&lt;h1&gt; 到 &lt;h6&gt; 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。<br>
+			(2)页面主体
+			Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 &lt;body&gt;  元素和所有段落元素。另外，&lt;p&gt; （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。<br>
+			(3)内联文本元素Marked tex、被删除的文本、<br>
+        	4.对齐<br>
+        	5.改变大小写
+        	6.地址。让联系信息以最接近日常使用的格式呈现。在每行结尾添加 &lt;br&gt; 可以保留需要的样式。
+            </p>
+        </li>
+    </ol>
+    <h3>js</h3>
+    <ol>
+    	<li>
+    		<p>1.javascript的typeof返回哪些数据类型</p>
+    		<p>Ｏbject number function boolean underfind;</p>
+    	</li>
+    	<li>
+    		<p>例举3种强制类型转换和2种隐式类型转换?</p>
+    		<p>强制（parseInt,parseFloat,number）隐式（== – ===</p>
+    	</li>
+    	<li>
+    		<p>数组方法pop() push() unshift() shift()</p>
+    		<p>Push()尾部添加 pop()尾部删除<br>
+			   Unshift()头部添加 shift()头部删除
+			</p>
+    	</li>
+    	<li>
+    		<p>事件委托是什么</p>
+    		<p>让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
+    	</li>
+    	<li>
+    		<p>.闭包是什么，有什么特性，对页面有什么影响?简要介绍你理解的闭包</p>
+    		<p>闭包就是能够读取其他函数内部变量的函数。</p>
+    	</li>
+    	<li>
+    		<p>ajax请求的时候get 和post方式的区别?</p>
+    		<p>一个在url后面 一个放在虚拟载体里面;
+				有大小限制;
+				安全问题;
+				应用不同 一个是论坛等只需要请求的，一个是类似修改密码的;
+			</p>
+    	</li>
+    	<li>
+    		<p>谈谈This对象的理解</p>
+    		<p>this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。
+			但是有一个总原则，那就是this指的是调用函数的那个对象。
+			this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象
+			</p>
+    	</li>
+    </ol>
+    <h2>其他</h2>
+    <ol>
+    	<li>
+    		<p>对Node的优点和缺点提出了自己的看法？</p>
+    		<p>(优点）<br>
+				因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，
+				因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。
+				此外，与Node代理服务器交互的客户端代码是由javascript语言编写的，
+				因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。<br>
+			   （缺点）<br>
+				Node是一个相对新的开源项目，所以不太稳定，它总是一直在变，
+				而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。
+			</p>
+    	</li>
+    	<li>
+    		<p>你常用的开发工具是什么？为什么？</p>
+    		<p>
+    			sublime;页面简洁;强大的插件;体积小;可多屏显示;可多重选择
+    		</p>
+    	</li>
+    	<li>
+    		<p>对于前端自动化构建工具有了解吗？简单介绍一下</p>
+    		<p>gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率。</p>
+    	</li>
+    </ol>
+    <br>
+    <br>
+    <h1>相关工作岗位要求</h1>
+    <ol>
+    	<li>
+    		<p>MIG03-web前端高级开发工程师(腾讯)</p>
+    		<p>岗位职责： 负责腾讯无线QQ浏览器、应用宝等产品PC端及移动终端web网站重构及前端开发； 无线前端自动化工具开发。 岗位要求： 计算机或相关专业本科以上学历，5年以上相关工作经验； 精通html(5)、css(3)，对web标准化有深入见解，有成功的多终端网站项目经验； 熟悉至少一种面向对象的前端框架，有写原生代码功底； 关注能提升用户体验和网页性能的技术，并能应用于实际项目； 有较强的沟通协作和学习能力； 有服务器端开发经验优先。, 高薪诚聘</p>
+    		<p>自身不足：缺经验，原生代码功底不足，没有项目成功经验，h5和css3不够精通</p>
+    	</li>
+    	<li>
+    		<p>Web前端开发工程师</p>
+    		<p>
+    			1.本科及以上学历，计算机相关专业，2018毕业的大四学生。
+				2、掌握JavaScript、CSS、JSON等技术；熟悉HTML5标准，了解各种浏览器特性与相关调试工具。
+				3、熟悉javascript面向对象机制，能用原生javascript进行代码编程，至少熟悉一种javascript框架，能够使用框架快速开发。
+				4、良好的沟通协助能力，有责任心，勤奋好学，热爱技术，能吃苦耐劳。
+				5、在校成绩优秀，算法、数据结构基础扎实。
+				6、有项目经验者优先；
+			</p>
+			<P>自身不足:h5标准不熟悉</P>
+    	</li>
+    	<li>
+    		<p>Web前端工程师</p>
+    		<p>
+    		 任职要求： 
+    		 1、有一定的互联网应用前端开发相关经验，擅长Web前端开发，熟练掌握主流Web前端技术，例如：HTML5、CSS3、Ajax、JavaScript等 熟练运用jQuery等主流前端框架或类库； 
+    		 2、需有过开发小程序经验者；
+    		 3、熟悉浏览器兼容性解决方案，能够解决多浏览器版本兼容问题； 
+    		 4、有前端模块化、自动化开发经验者优先；
+    		 5、有良好的沟通能力和团队协作精神，能承受较大的工作压力。
+    		 </p>
+    		 <p>分析不足：没有小程序开发经验,html5和css3不是很熟练</p>
+    	</li>
+    </ol>
+
+
+    </div>
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+</body>
+
+</html>

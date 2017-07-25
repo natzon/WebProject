@@ -1,0 +1,199 @@
+<!-- 为什么我的屏幕选择是400px的时候变化呢，而实际是500px的时候变化呢，可能是自己浏览器缓存问题 -->
+<!-- 为什么屏幕宽度是375px，我设置盒子的宽度为100%，得到实际宽度为375.33px ，可能是由于边距德尔问题-->
+<!-- 为什么我撸代码的时候，边打边調，屏幕宽度是正常的，我重新打开一次网页后，页面布局就变了，有些地方显示不出来了，缓存问题-->
+<!-- 需要改变一下分辨率，768px的比较好 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="style/baidunew.css">
+    <meta charset="utf-8" name="viewport" content="device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="pc">
+        <!-- 父容器 -->
+        <div class="wrapper">
+            <!-- 头部 -->
+            <header>
+                <nav>
+                    <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    <a href="http://news.baidu.com/">新闻</a>
+                    <a href="http://www.hao123.com/">hao123</a>
+                    <a href="http://map.baidu.com/">地图</a>
+                    <a href="http://v.baidu.com/">视频</a>
+                    <a href="http://tieba.baidu.com/">贴吧</a>
+                    <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登陆</a>
+                    <!-- 用一个盒子包起来就不会出现断链的情况，可能会点击不到 -->
+                    <div class="setting-menu">
+                        <!-- 设置 -->
+                        <a href="javascript:;" class="baidu-nav">设置</a>
+                        <div class="baidu-setting">
+                            <span class="icon-triangle"></span>
+                            <a href="javascript:;">搜索设置</a>
+                            <a href="https://www.baidu.com/gaoji/advanced.html">高级搜索</a>
+                            <a href="javascript:;">关闭预测</a>
+                            <a href="javascript:;">搜索历史</a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="more" id="more">更多产品</a>
+                </nav>
+            </header>
+            <!--头部end  -->
+            <!-- 更多产品 -->
+            <div class="more-product" id="moreProduct">
+                <ul>
+                    <li class="more-sub-btn">
+                        <a href="javascript:;">更多产品</a>
+                    </li>
+                    <li>
+                        <a href="http://music.baidu.com/"><span class="more-sub-one"></span> 音乐</a>
+                    </li>
+                    <li>
+                        <a href="http://image.baidu.com/"><span class="more-sub-two"></span>图片</a>
+                    </li>
+                    <li>
+                        <a href="http://zhidao.baidu.com/"><span class="more-sub-three"></span>知道</a>
+                    </li>
+                    <li>
+                        <a href="http://wenku.baidu.com/"><span class="more-sub-four"></span>文库</a>
+                    </li>
+                    <li>
+                        <a href="http://top.baidu.com/"><span class="more-sub-five"></span>风云榜</a>
+                    </li>
+                    <li class="more-all">
+                        <a href="https://www.baidu.com/more/">全部产品>></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 更多产品end -->
+            <!-- 内容部分 -->
+            <div class="content">
+                <!-- 单标签别忘记加闭合 -->
+                <div class="search-form">
+                    <img src="img/bd_logo1.png" alt="百度一下" />
+                    <!-- 百度服务器地址 -->
+                    <div class="formset">
+                        <form action="https://www.baidu.com/s" method="get" target="_blank">
+                            <input type="text" name="wd" class="search-input" id="searchInput">
+                            <button type="submit" class="search-btn">百度一下</button>
+                            <span class="icon-cam"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容部分end -->
+            <!-- footer -->
+            <footer>
+                <p>
+                    <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                    <a href="http://home.baidu.com/">关于百度</a>
+                    <a href="http://ir.baidu.com/">about Baidu</a>
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p>
+                    <!-- span标签组合文档中的行内元素 -->
+                    <span>©2017 Baidu</span>
+                    <a href="https://www.baidu.com/duty/">使用百度前必读</a>
+                    <a href="http://jianyi.baidu.com/">意见反馈</a>
+                    <span>京ICP证030173号 </span>
+                    <span class="icon-copyright"></span>
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=1 1000002000001">京公网安备11000002000001号 </a>
+                    <!-- span不会占用一行 -->
+                    <span class="icon-copyright2"></span>
+                </p>
+            </footer>
+            <!-- footer end -->
+        </div>
+        <!-- 父容器end -->
+    </div>
+   
+    <div class="mobile">
+        <!--头部-->
+        <div id="header">
+            <div class="head">
+                <!-- 天气 -->
+                <div class="weather">
+                    <div class="weather-icon"></div>
+                    <div class="weather-num">26°</div>
+                    <div class="wheather-statu">
+                        <p>深圳</p>
+                        <p>31&nbsp;优</p>
+                    </div>
+                    <div class="icon-down"></div>
+                </div>
+                <!-- 天气end -->
+                <div class="login"></div>
+            </div>
+            <!-- 图片 -->
+            <div class="logo">
+                <img src="./img/bd_logo.png">
+            </div>
+            <!-- 图片end -->
+            <div class="search-form">
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" name="wd" class="search-input" id="searchInput">
+                    <button type="submit" class="search-btn">百度一下</button>
+                    <div class="icon-mic">
+                    </div>
+                </form>
+            </div>
+            <!-- 菜单 -->
+            <div class="menu">
+                <a href="https://mbd.baidu.com/webpage?action=icard&type=subscribe&channel=wise_home" class="menu-sub-1">
+                    <i></i>
+                    <span>关注</span>
+                </a>
+                <a href="https://news.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1" class="menu-sub-2">
+                    <i></i>
+                    <span>新闻</span>
+                </a>
+                <a href="http://dushu.m.baidu.com/" class="menu-sub-3">
+                    <i></i>
+                    <span>小说</span>
+                </a>
+                <a href="https://sv.baidu.com/#/?_k=g0qpmo" class="menu-sub-4">
+                    <i></i>
+                    <span>视频</span>
+                </a>
+                <a href="https://m.nuomi.com/?cid=wise_shouye_nuomi" class="menu-sub-5">
+                    <i></i>
+                    <span>糯米</span>
+                </a>
+                <a href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&wtj=wi&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1" class="menu-sub-6">
+                    <i></i>
+                    <span>地图</span>
+                </a>
+            </div>
+            <!-- 菜单end -->
+        </div>
+        <!-- 头部end -->
+        <!-- 新闻 -->
+        <div class="news-list">
+            <div class="new1">
+                <a href="https://www.baidu.com/#iact=wiseindex%2Ftabs%2Fnews%2Factivity%2Fnewsdetail%3D%257B%2522linkData%2522%253A%257B%2522name%2522%253A%2522iframe%252Fmib-iframe%2522%252C%2522id%2522%253A%2522feed%2522%252C%2522index%2522%253A0%252C%2522url%2522%253A%2522https%253A%252F%252Fm.baidu.com%252Ffeed%252Fdata%252Fimageland%253Fs_type%253Dpicnews%2526nid%253D12055757663761454916%2526n_type%253D0%2526p_from%253D2%2522%252C%2522title%2522%253A%2522%25E5%2585%25A8%25E7%25BD%2591%25E8%25B5%2584%25E8%25AE%25AF%2522%257D%257D">
+                    <div class="text-content">
+                        <h2>被评为最丑港姐，从140斤减到99斤，现在怀孕幸福美满！</h2>
+                    </div>
+                    <div class="large-pic">
+                        <img src="./img/timg.jpg" width="343px" height="192px">
+                        <span>全民资讯网</span>
+                        <span>5月20</span> 
+                    </div>
+                </a>
+            </div>
+            <div class="new2"></div>
+        </div>
+        <!-- 新闻end -->
+    </div>
+     <!-- 一般js都是写在后面的 -->
+    <script src="./js/jquery-3.2.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+

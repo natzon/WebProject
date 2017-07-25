@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.top {
+    /*绝对布局会脱离 文档流*/
+    background-color: #005e80;
+    position: relative;
+    margin-left: -50px;
+    margin-bottom: 5px;
+    left: 50%;
+    box-shadow: 3px 2px 20px 8px rgba(0, 0, 0, .6);
+}
+
+.left {
+    position: relative;
+    background-color: #9927b0;
+    float: left;
+    margin-left: 95px;
+    box-shadow: 3px 2px 20px 8px rgba(0, 0, 0, .6);
+}
+
+.middle {
+    position: relative;
+    float: left;
+    background-color: orange;
+    margin-left: 5px;
+    box-shadow: 3px 2px 84px 8px rgba(0, 0, 0, .6);
+}
+
+.right {
+    position: relative;
+    background-color: #4caf50;
+    margin-left: 5px;
+    display: inline-block;
+    box-shadow: 3px 2px 20px 8px rgba(0, 0, 0, .6);
+}
+
+.down {
+    position: relative;
+    background-color: #e91e3c;
+    margin-left: 199px;
+    box-shadow: 3px 2px 20px 8px rgba(0, 0, 0, .6);
+}
+
+.outer {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -260px;
+    margin-top: -160px;
+}
+
+img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 18px;
+}

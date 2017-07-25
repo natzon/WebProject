@@ -1,0 +1,138 @@
+/*表格1*/
+
+body {
+    /*	overflow: scroll;*/
+    background-color: #ccc;
+}
+
+.cen {
+	    width: 733px;
+    
+    background: #fff;
+    border-radius: 22px;
+    margin: 0 auto;
+
+}
+
+
+
+.tab1 {
+    width: 710px;
+    border: 0;
+    /*这里就是相关的cellpadding=0*/
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+
+}
+
+.td1 {
+    width: 29px;
+    height: 28px;
+    vertical-align: top;
+}
+
+.img1 {
+    width: 29px;
+    height: 28px;
+}
+
+
+/*rowspan=2在css中怎么写*/
+
+.td2 {
+    width: 220px;
+    height: 72px;
+}
+
+.img2 {
+    width: 180px;
+    height: 76px;
+    margin: 3px 0px;
+    border: 0px;
+}
+
+.td3 {
+    text-align: -webkit-right;
+    vertical-align: bottom;
+    font-size: 12px;
+    color: #FF0099;
+}
+
+.td4 {
+    width: 29px height: 28px;
+    vertical-align: top;
+}
+
+.td4 img {
+    width: 29px;
+    height: 28px;
+}
+
+
+/*第二个表格的css*/
+
+.lblue {
+    /*这一类的都向左边排列和字体为蓝色*/
+    color: blue;
+    text-align: left;
+}
+
+.tab2 {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 630px;
+    text-align: center;
+    margin-left: -75px;
+    margin: 0 auto;
+}
+
+.tab2 caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tab2 tr td {
+    border: 2px solid grey;
+    font-size: 12px;
+}
+
+.td6 {
+    text-align: center;
+}
+
+
+/*right类别*/
+
+.right {
+    text-align: right;
+}
+
+
+/*第三个表格，表单中的表格*/
+
+.tab3 {
+    width："100%" border-collapse: collapse;
+    padding: 1px;
+    text-align: center;
+}
+
+.tab3 tr td {
+    border: 0px;
+}
+
+.subject1 {
+    height: 25px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+
+/*/*第四个表格*，cellpadding是单元格边界和单元格之间的距离，cellspacing是单元格直接的距离*/
+
+.tab4 {
+    width: 710;
+    border: 0;
+    text-align: center;
+    】 border-collapse: collapse;
+}
