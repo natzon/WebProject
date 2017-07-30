@@ -1,0 +1,2 @@
+1.xss注入防护：在路由文件user.js中引用node.js的xss模块，在更新和插入操作中添加xss()方法，过滤和转义用户输入的信息。line6
+2.csrf注入防护：在路由文件user.js中的8到13行引用node.js的csurf模块，添加gettoken路由，用于生成一个token值来判断是否是用户自己发送的请求，在admin.html中添加<input type = "hidden" name="_csrf" value="" id="_csrf">，用于存放token值。admin.js第61行中要添加一个请求，用于获取token值。
