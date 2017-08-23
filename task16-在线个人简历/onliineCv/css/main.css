@@ -1,0 +1,316 @@
+/*样式css*/
+body {
+  font-size: 12px;
+  background: rgba(203, 191, 191, 0.92);
+}
+.information {
+  background: #262f33;
+}
+.experience {
+  background: white;
+}
+.information {
+  color: #fff;
+}
+.information_photo {
+  width: 180px;
+  height: 180px;
+  background: #e9e9e9;
+  border-radius: 50%;
+  background: url(../img/photo.png) 3px 20px no-repeat;
+  background-size: 170px 210px;
+}
+.information_name p {
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.information_name span {
+  font-size: 1.5em;
+}
+.information_name span:before {
+  background: #e5e5e5;
+  height: 1px;
+}
+.information_name span:after {
+  background: #e5e5e5;
+  height: 1px;
+}
+/*联系方式样式*/
+.information_contact ul {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+.information_contact ul span {
+  width: 32px;
+  height: 32px;
+  background: yellow;
+}
+.information_contact ul .information_contact_pic-phone {
+  background: url(../img/mobile.png) 4px 0 no-repeat;
+  background-size: 25px 32px;
+}
+.information_contact ul .information_contact_pic-mail {
+  background: url(../img/mailbox.png);
+}
+.information_contact ul .information_contact_pic-git {
+  background: url(../img/github.png);
+}
+.information_contact ul .information_contact_pic-blog {
+  background: url(../img/blog.png);
+}
+/*个人技能部分*/
+.information_skills {
+  height: 360px;
+}
+.information_skills:before {
+  background: #e5e5e5;
+  height: 1px;
+}
+.information_skills .information_skills_title {
+  font-size: 2em;
+}
+.information_skills .information_skills_title span {
+  width: 32px;
+  height: 32px;
+}
+.information_skills .information_skills_content span {
+  font-size: 1.5em;
+  display: inline-block;
+  background: #000;
+  border-radius: 5px;
+}
+.opacity-mid {
+  opacity: 0.7;
+}
+.opacity-light {
+  opacity: 0.5;
+}
+.opacity-lighter {
+  opacity: 0.4;
+}
+/*教育经历部分样式*/
+.experience > div {
+  height: 319px;
+  margin-bottom: 40px;
+}
+.experience p {
+  font-size: 1.5em;
+}
+.experience .title-content {
+  font-size: 2em;
+  font-weight: bold;
+}
+.experience .experience_title {
+  height: 40px;
+  line-height: 40px;
+}
+.experience .experience_title span {
+  width: 36px;
+  height: 36px;
+}
+.experience_education .education_title-icon {
+  background: url(../img/education.png) 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+.experience_education .experience_education_content {
+  height: 250px;
+}
+.experience_education .experience_education_content li {
+  font-size: 1.5em;
+}
+.experience_project .project_title-icon {
+  background: url(../img/project.png) 0px 2px no-repeat;
+  background-size: 36px 36px;
+}
+.experience_project .project_name {
+  font-size: 1.5em;
+}
+.experience_project .project_name a {
+  text-decoration: underline;
+  color: rgba(36, 35, 35, 0.99);
+}
+.experience_project .project_name span {
+  background-color: #da8f04;
+  border-radius: 5px;
+}
+.experience_aboutme .aboutme_title-icon {
+  background: url(../img/aboutme.png) 0 3px no-repeat;
+  background-size: 32px 32px;
+}
+.experience_aboutme .experience_aboutme_content {
+  font-size: 1.5em;
+}
+.experience_aboutme .experience_aboutme_content li {
+  margin-bottom: 20px;
+}
+/*布局css*/
+body,
+html,
+p,
+div,
+ul,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.h-800 {
+  height: 1080px;
+}
+.contain {
+  margin-top: 5px;
+}
+.information {
+  padding-top: 40px;
+  /*居中*/
+  text-align: center;
+}
+.information_photo {
+  margin: 0 auto;
+  position: relative;
+}
+.information_photo img {
+  position: absolute;
+  z-index: 1;
+}
+.information_name {
+  margin-top: 20px;
+}
+.information_name p {
+  margin-bottom: 20px;
+}
+.information_name span {
+  display: block;
+  position: relative;
+  padding: 20px 0;
+}
+.information_name span:before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 0;
+}
+.information_name span:after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+}
+.information_contact {
+  margin-top: 30px;
+}
+.information_contact ul {
+  text-align: left;
+}
+.information_contact ul li {
+  height: 50px;
+  padding-left: 20%;
+  line-height: 50px;
+  position: relative;
+}
+.information_contact ul span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  margin-left: -45px;
+}
+/*个人技能部分*/
+.information_skills {
+  margin-top: 80px;
+  position: relative;
+}
+.information_skills:before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: -40px;
+}
+.information_skills .information_skills_title {
+  text-align: left;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+  padding-left: 15%;
+}
+.information_skills .information_skills_title span {
+  display: inline-block;
+  background: url(../img/skill.png) 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  margin-left: -45px;
+}
+.information_skills .information_skills_content {
+  margin-top: 30px;
+}
+.information_skills .information_skills_content li {
+  height: 50px;
+}
+.information_skills .information_skills_content li span {
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+/*经历部分样式*/
+.experience {
+  padding-top: 40px;
+}
+.experience .experience_title {
+  padding-left: 40px;
+  position: relative;
+}
+.experience .experience_title span {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+.experience_education .experience_education_content {
+  margin-top: 10px;
+}
+.experience_education .experience_education_content li {
+  height: 35px;
+  line-height: 35px;
+}
+.experience_education .experience_education_content li span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.experience_project {
+  margin-top: -30px;
+}
+.experience_project li {
+  margin-bottom: 20px;
+}
+.experience_project .project_name {
+  height: 30px;
+  line-height: 30px;
+}
+.experience_project .project_name span {
+  float: right;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+.experience_project .project_content {
+  margin-top: 5px;
+}
+/*关于自己*/
+.experience_aboutme .experience_aboutme_content {
+  margin-top: 10px;
+}
+/*响应式css*/
+@media only screen and (min-width: 900px) {
+  body {
+    min-width: 1250px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 890px) {
+  body {
+    min-width: 888px;
+  }
+}

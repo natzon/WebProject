@@ -1,0 +1,174 @@
+/*布局css*/
+body,html,p,div,ul,li,span{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.h-800{
+	height:1080px;
+}
+.contain{
+	margin-top:5px;
+}
+.information{
+	padding-top:40px;
+	/*居中*/
+	text-align:center;
+}
+.information_photo{
+	margin:0 auto;
+	position:relative;
+	img{
+		position:absolute;
+		z-index:1;
+	}
+}
+.information_name{
+	margin-top:20px;
+	p{
+		margin-bottom:20px;
+	}
+	span{
+		display:block;
+		position:relative;
+		padding:20px 0;
+		&:before{
+			content: "";
+			position: absolute;
+			left:5%;
+			right:5%;
+			top:0;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			left:5%;
+			right:5%;
+			bottom:0;
+		}
+	}
+}
+
+.information_contact{
+	margin-top:30px;
+	ul{
+		text-align:left;
+		li{
+			height:50px;
+			padding-left:20%;
+			line-height:50px;
+			position:relative;
+		}
+		span{
+			display:inline-block;
+			position:absolute;
+			top:50%;
+			margin-top:-16px;
+			margin-left:-45px;
+		}
+	}
+}
+
+/*个人技能部分*/
+.information_skills{
+	margin-top:80px;
+	position:relative;
+	&:before{
+			content: "";
+			position: absolute;
+			left:5%;
+			right:5%;
+			top:-40px;
+		}
+		.information_skills_title{
+			text-align:left;
+			height:42px;
+			line-height:42px;
+			position:relative;
+			padding-left:15%;
+			span{
+				display:inline-block;
+			    background:url(../img/skill.png)0 0 no-repeat;
+			    position:absolute;
+			    top:50%;
+				margin-top:-16px;
+				margin-left:-45px;
+				
+			}
+
+		}
+		.information_skills_content{
+			margin-top:30px;
+			li{
+				height:50px;
+				
+				span{
+					margin-right:10px;
+					height:30px;
+					line-height:30px;
+
+				}
+			}	
+		}
+}
+
+/*经历部分样式*/
+
+.experience{
+	padding-top:40px;
+	.experience_title{
+		padding-left:40px;
+		position:relative;
+		span{
+		display:inline-block;
+		position:absolute;
+		left:0;
+		}
+	}
+}
+.experience_education{
+    
+	.experience_education_content{
+		margin-top:10px;
+		li{
+			height:35px;
+			line-height:35px;
+			span{
+				display:inline-block;
+				margin-right:20px;
+
+			}
+		}
+	}
+}
+
+.experience_project{
+
+	 margin-top:-30px;
+	li{
+		margin-bottom:20px;
+	}
+	.project_name{
+		height:30px;
+		line-height:30px;
+		span{
+			float:right;
+			display:inline-block;
+			margin-left:10px;
+			padding:0 5px;
+		}
+
+	}
+	.project_content{
+		margin-top:5px;
+	}
+}
+
+/*关于自己*/
+.experience_aboutme{
+
+	.experience_aboutme_content{
+		margin-top:10px;
+	}
+}
